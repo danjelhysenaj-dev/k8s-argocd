@@ -34,7 +34,7 @@ Now in order to get ArgoCD we need to do port forwarding to access the web-gui w
 ---
 
 
-After you do port forwarding now you need to log in to ArgoCD in order to do that you need to find your password and in order to do that you need to find your secret/
+After you do port forwarding now you need to log in to ArgoCD in order to do that you need to find your password which is saved as secret
 # Get Credentials
 ---
 	kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
